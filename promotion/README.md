@@ -1,3 +1,21 @@
+## enterprise-argo helm install 
+
+For installing the Argo CD Please follow the below document
+
+https://docs.google.com/document/d/1GWiyWp5e6v92x4quemc4W_-kWfx-hpzvxVnbEIBsTIk/edit#
+
+   - **Troubleshooting**
+
+- While installing if u face this error Unable to continue with install: CustomResourceDefinition "analysisruns.argoproj.io"
+
+- Please updated values.yaml with `argo-rollouts.installCRDs: false` and perform helm install.
+
+- While installing if u face this error Unable to continue with install: CustomResourceDefinition  "eventsources.argoproj.io"
+
+- Please updated values.yaml with `argo-events.crds.install: false` and perform helm install.
+
+
+
 ## Documents:
 
 - **Carina Service:**
